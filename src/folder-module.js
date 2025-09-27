@@ -1,18 +1,16 @@
-export const folders = [];
-
 class Folder {
-  constructor(folderTitle, folderId) {
-    this.folderTitle = folderTitle;
-    this.folderId = folderId;
+  constructor(title, id) {
+    this.title = title;
+    this.id = id;
     this.notes = [];
   }
 }
 
-export function createFolder(folderTitle, folderId) {
-  const newFolder = new Folder(folderTitle, folderId);
+export function createFolder(title, id, folders) {
+  const newFolder = new Folder(title, id);
   folders.push(newFolder);
 }
 
-export function deleteFolder(folderId) {
-  folders.splice(folderId, 1);
+export function deleteFolder(id) {
+  folders.splice(id, 1);
 }

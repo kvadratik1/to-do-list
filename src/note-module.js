@@ -21,6 +21,6 @@ export function createNote(
   folders[folderId].notes.push(newNote);
 }
 
-export function deleteNote(noteId, folderId, folders) {
-  folders[folderId].notes.splice(noteId, 1);
+export function deleteNote(noteToDelete, folderId, folders) {
+  folders[folderId].notes.splice(noteToDelete, 1);
 }
