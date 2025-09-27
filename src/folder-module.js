@@ -12,3 +12,7 @@ export function createFolder(folderTitle, folderId) {
   const newFolder = new Folder(folderTitle, folderId);
   folders.push(newFolder);
 }
+
+export function deleteFolder(folderId) {
+  folders.splice(folderId, 1);
+}

@@ -20,3 +20,7 @@ export function createNote(
   const newNote = new Note(title, description, dueDate, priority, id);
   folders[folderId].notes.push(newNote);
 }
+
+export function deleteNote(noteId, folderId, folders) {
+  folders[folderId].notes.splice(noteId, 1);
+}
