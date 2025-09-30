@@ -1,6 +1,7 @@
 import { createFolder, deleteFolder } from "./folder-module";
 import { createNote, deleteNote } from "./note-module";
 import { showFolders } from "./ui-module";
+import "./style.css";
 
 const folders = [];
 
