@@ -11,6 +11,6 @@ export function createFolder(title, id, folders) {
   folders.push(newFolder);
 }
 
-export function deleteFolder(id) {
+export function deleteFolder(id, folders) {
   folders.splice(id, 1);
 }
