@@ -8,10 +8,6 @@ const addFolderButton = document.querySelector("#addFolderBtn");
 
 const folders = [];
 
-createFolder("sdrg", 4356, folders);
-createNote("note", "sdf", "", "", 0, 0, folders);
-createNote("note to delete", "sghj", "", "", 1, 0, folders);
-console.log(folders);
 showFolders(folders);
 
 addFolderButton.addEventListener("click", triggerCreateFolderWindow);
