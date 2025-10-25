@@ -7,10 +7,25 @@ export function showFolders(folders) {
     folder.textContent = folders[i].title;
     folder.setAttribute("id", folders[i].id);
     folder.className = "folder";
-    folderContainer.appendChild(folder);
 
     folder.addEventListener("click", () => {
       localStorage.setItem("chosenFolder", folders[i].id);
     });
+
+    folderContainer.appendChild(folder);
+  }
+}
+
+const notesContainer = document.querySelector("#notes-container");
+
+export function showNotes(notes) {
+  notesContainer.replaceChildren();
+  for (let i = 0; i < notes.length; i++) {
+    const note = document.createElement("div");
+    note.textContent = notes[i].description;
+    note.setAttribute("id", notes[i].id);
+    note.className = "note";
+
+    notesContainer.appendChild(note);
   }
 }
